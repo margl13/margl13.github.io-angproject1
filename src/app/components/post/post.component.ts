@@ -8,10 +8,8 @@ import {PostService} from '../../services/post.service';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent {
+
   @Input()
   post: Post;
   constructor(private postService: PostService) { }
-  ShowDetails(id: number): void {
-    this.postService.commentofSinglePost(id).subscribe(value => console.log(value));
-  }
 }
