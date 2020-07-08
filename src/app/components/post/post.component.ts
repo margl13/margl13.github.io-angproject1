@@ -13,3 +13,4 @@ export class PostComponent {
   post: Post;
   constructor(private postService: PostService) { }
 }
+
